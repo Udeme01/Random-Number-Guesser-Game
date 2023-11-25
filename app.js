@@ -9,7 +9,7 @@ guessBtn.addEventListener('click', guessNum);
 
 // function declarations...
 let randomNumber = Math.floor(Math.random() * 20000) + 1;
-console.log(randomNumber)
+// console.log(randomNumber)
 
 let attempts = 0;
 function guessNum() {
@@ -21,7 +21,7 @@ function guessNum() {
       break;
     } if(userInput.value == randomNumber) {
       resultOutput.innerHTML = `correct`
-      location.reload();
+      // location.reload();
       break;
     } else if(userInput.value > randomNumber) {
       resultOutput.innerHTML = `too high!`
